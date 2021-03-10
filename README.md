@@ -11,7 +11,7 @@ It's the Command line tool provides weather forecasting based on geocodes.
 > 2. forecast service by weatherstack.com, To get current weather forecast based on geocodes.
 
 
-### There is a commands to get deatils.
+### There is a command to get deatils.
 
 > node index search --location="delhi" --> To get weather forecast by providing location
 
