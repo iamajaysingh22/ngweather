@@ -1,23 +1,22 @@
 const yargs = require("yargs");
 const geocodes = require("./utils/geocodes");
 const forecast = require("./utils/forecast");
-
+/* node index search --location="delhi" */
 yargs
   .command(
     "search",
-    "To search weather forecast of the given address",
+    "To search weather forecast of the given location",
     (yarg) => {
-      yarg.options("address", {
+      yarg.options("location", {
         type: "string",
         demandOption: true,
-        description: "Address to find weather forecast",
+        description: "Location to find weather forecast",
       });
     },
     (argv) => {
-      console.log("hello", argv.address);
       // geocodes function proiveds the latitude and longitude on given search string
       geocodes(
-        argv.address,
+        argv.location,
         function (error, { latitude, longitude, location }) {
           if (error) {
             return console.log(error);
