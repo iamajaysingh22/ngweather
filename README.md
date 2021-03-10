@@ -4,11 +4,12 @@ It's the Command line tool provides weather forecasting based on geocodes.
 
 # Statement
 
-> Using this command-line tool, User can see weather forecast of specific location.
+> Using this command-line tool, the User can see the weather forecast of a specific location.
 > This app utilizing the two service to get geocode and weather forecast
 >
 > 1. geocoding service by mapbox.com, To get geocodes based on provided location.
 > 2. forecast service by weatherstack.com, To get current weather forecast based on geocodes.
+
 
 ### There is a commands to get deatils.
 
